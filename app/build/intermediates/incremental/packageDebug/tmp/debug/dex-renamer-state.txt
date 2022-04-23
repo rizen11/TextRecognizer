@@ -1,0 +1,4 @@
+#Wed Apr 13 14:52:08 MSK 2022
+base.0=C\:\\Users\\yarik\\AndroidStudioProjects\\abobonator\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+path.0=classes.dex
