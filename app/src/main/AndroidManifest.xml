@@ -28,7 +28,8 @@
 
         <activity
             android:name=".OcrCaptureActivity"
-            android:label="TextRecognizer">
+            android:label="TextRecognizer"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,5 +37,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

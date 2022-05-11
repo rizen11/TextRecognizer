@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="340dp"
-        android:onClick="onClick"
-        android:text="Text" />
-
     <com.google.android.gms.samples.vision.bebra.ui.camera.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
@@ -26,8 +15,23 @@
         <com.google.android.gms.samples.vision.bebra.ui.camera.GraphicOverlay
             android:id="@+id/graphicOverlay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="30dp" />
 
     </com.google.android.gms.samples.vision.bebra.ui.camera.CameraSourcePreview>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="30dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:text="Text" />
 
 </RelativeLayout>

@@ -5,13 +5,16 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.util.Log;
 
 import com.google.android.gms.samples.vision.bebra.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.Text;
 import com.google.android.gms.vision.text.TextBlock;
 
 import java.util.List;
+
 public class OcrGraphic extends GraphicOverlay.Graphic {
+    private final String TAG = "OcrGraphic";
 
     private int id;
 
@@ -61,21 +64,22 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
         rect = translateRect(rect);
         return rect.contains(x, y);
     }
+
     @Override
     public void draw(Canvas canvas) {
         if (textBlock == null) {
             return;
         }
+
         RectF rect = new RectF(textBlock.getBoundingBox());
         rect = translateRect(rect);
         canvas.drawRect(rect, rectPaint);
 
         List<? extends Text> textComponents = textBlock.getComponents();
-        for(Text currentText : textComponents) {
+        for (Text currentText : textComponents) {
             float left = translateX(currentText.getBoundingBox().left);
             float bottom = translateY(currentText.getBoundingBox().bottom);
             canvas.drawText(currentText.getValue(), left, bottom, textPaint);
-            aye =currentText.getValue();
         }
     }
 }
