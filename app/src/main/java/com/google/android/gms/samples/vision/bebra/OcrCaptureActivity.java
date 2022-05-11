@@ -258,6 +258,10 @@ public final class OcrCaptureActivity extends Activity {
             return onTap(e.getRawX(), e.getRawY()) || super.onSingleTapConfirmed(e);
         }
     }
+    public void onClick(View view){
+        Intent i = new Intent(OcrCaptureActivity.this, TextWindow.class);
+        startActivity(i);
+    }
 
     private class ScaleListener implements ScaleGestureDetector.OnScaleGestureListener {
         @Override

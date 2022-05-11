@@ -16,7 +16,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
     private int id;
 
     private static final int TEXT_COLOR = Color.WHITE;
-
+    public static String aye;
     private static Paint rectPaint;
     private static Paint textPaint;
     private final TextBlock textBlock;
@@ -75,6 +75,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
             float left = translateX(currentText.getBoundingBox().left);
             float bottom = translateY(currentText.getBoundingBox().bottom);
             canvas.drawText(currentText.getValue(), left, bottom, textPaint);
+            aye =currentText.getValue();
         }
     }
 }
