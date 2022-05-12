@@ -11,6 +11,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
         android:drawableTop="@drawable/line"
         android:drawableBottom="@drawable/line"
         android:text=""
@@ -28,7 +30,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="20dp"
-        android:drawableStart="?attr/actionModeCopyDrawable"
+        android:background="?attr/actionModeCopyDrawable"
+        android:foreground="?attr/actionModeCopyDrawable"
         android:minWidth="62dp"
         android:minHeight="62dp"
         android:onClick="onClickCopyButton" />
@@ -41,7 +44,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
         android:layout_marginBottom="20dp"
-        android:drawableStart="?attr/actionModeCloseDrawable"
+        android:background="?attr/actionModeCloseDrawable"
+        android:foreground="?attr/actionModeCloseDrawable"
         android:minWidth="62dp"
         android:minHeight="62dp"
         android:onClick="onClickExitButton" />
