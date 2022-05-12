@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="170dp"
+        android:layout_marginEnd="155dp"
         android:layout_marginBottom="30dp"
+        android:drawableStart="?android:attr/actionModeFindDrawable"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="onClick"
-        android:text="Text" />
+        android:onClick="onClick" />
 
 </RelativeLayout>
